@@ -77,11 +77,6 @@ main{
     background-position: top center;
     background-size: cover;
 }
-.info-image.info-2{
-    height: 200px;
-    background-image: url("../img/pic1.jpeg");
-    background-position: center;
-}
 .blog-content, .info-content{
     margin: 0;
     padding: 10px 17px;
@@ -97,7 +92,10 @@ main{
     margin-top: 15px;
 }
 .blog-overview p,.info-overview p{
-    margin: 0 0 15px 1px;
+    margin: 15px 0 15px 1px;
+}
+#page-source{
+    font-size: 1.2em;
 }
 /* --------------------- responsive ---------------------- */
 @media only screen and (min-width: 990px){
