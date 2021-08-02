@@ -140,7 +140,7 @@ main{
         margin-left: 15px;
     }
 }
-@media only screen and (orientation: landscape) and (min-width: 795px){
+@media only screen and (orientation: landscape) and (min-width: 750px){
     #myBlog{
         width: 500px;
     }
@@ -211,6 +211,7 @@ footer{
     margin: 0 7px 0 7px;
     position: relative;
     bottom: 20px;
+    border-radius: 0;
 }
 .bottom-nav-btn:hover{
     color: #000000;
