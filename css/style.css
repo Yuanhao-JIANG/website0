@@ -14,7 +14,7 @@ header{
 }
 #myBlog{
     height: 180px;
-    width: 450px;
+    width: 300px;
     position: relative;
     top: 40px;
     border: solid 3px;
@@ -22,9 +22,19 @@ header{
 #myBlog h1{
     line-height: 1.7em;
 }
+.welcome-message{
+    width: 100%;
+    text-align: center;
+}
+#welcome-message{
+    margin: 3px 0 3px 0;
+    padding: 0;
+}
 #nameTag{
+    display: inline-block;
     color: #ffffff;
     padding: 0 4px;
+    margin: 3px 10px 3px 10px;
 }
 /* ----------------------------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------------- main ------------------------------------------------------ */
@@ -54,7 +64,7 @@ main{
     margin: 0;
     padding: 0;
     background-image: url("../img/lwjglDemo.png");
-    background-position: 0 22%;
+    background-position: center 22%;
     background-size: cover;
 }
 .blog-image.blog-2{
@@ -62,7 +72,7 @@ main{
     margin: 0;
     padding: 0;
     background-image: url("../img/owl.png");
-    background-position: 0 20%;
+    background-position: center 20%;
     background-size: cover;
 }
 .info-entry{
@@ -97,8 +107,21 @@ main{
 #page-source{
     font-size: 1.2em;
 }
-/* --------------------- responsive ---------------------- */
+/* ----------------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------- responsive --------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------------- */
 @media only screen and (min-width: 990px){
+    #myBlog{
+        width: 500px;
+    }
+    .welcome-message{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #myBlog h1{
+        line-height: 1.8em;
+    }
     main{
         display: flex;
         align-items: flex-start;
@@ -118,6 +141,12 @@ main{
     }
 }
 @media only screen and (orientation: landscape) and (min-width: 795px){
+    #myBlog{
+        width: 500px;
+    }
+    #myBlog h1{
+        line-height: 1.8em;
+    }
     main{
         display: flex;
         align-items: flex-start;
