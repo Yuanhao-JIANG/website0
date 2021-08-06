@@ -59,7 +59,7 @@ main{
 .center-section .blog-entry{
     display: block;
     width: 100%;
-    max-width: 1000px;
+    max-width: 1200px;
 }
 .blog-entry{
     margin: 0 0 40px 0;
@@ -79,23 +79,7 @@ main{
     height: 320px;
     margin: 0;
     padding: 0;
-    background-image: url("../img/owl.png");
-    background-position: center 20%;
-    background-size: cover;
-}
-.blog-image.blog-3{
-    height: 320px;
-    margin: 0;
-    padding: 0;
-    background-image: url("../img/lwjglDemo.png");
-    background-position: center 22%;
-    background-size: cover;
-}
-.blog-image.blog-4{
-    height: 320px;
-    margin: 0;
-    padding: 0;
-    background-image: url("../img/owl.png");
+    background-image: url("../img/lego-sets/owl.png");
     background-position: center 20%;
     background-size: cover;
 }
@@ -104,9 +88,10 @@ main{
 }
 .carousel{
     display: inline-block;
-    width: 55%;
+    width: 100%;
+    margin: 0;
     min-width: 390px;
-    padding: 5px 0 0 0;
+    padding: 0 0 0 0;
 }
 .info-entry{
     margin: 0 0 40px 0;
@@ -116,7 +101,7 @@ main{
 }
 .info-image.info-1{
     height: 200px;
-    background-image: url("../img/harry.png");
+    background-image: url("../img/lego-sets/harry.png");
     background-position: top center;
     background-size: cover;
 }
@@ -178,16 +163,6 @@ main{
         max-width: 480px;
         margin-left: 15px;
     }
-    .carousel{
-        width: 54%;
-        position: relative;
-        top: 28px;
-        padding: 10px 0;
-    }
-    .carousel-blog .blog-content{
-        width: 41%;
-        padding: 30px;
-    }
 }
 @media only screen and (orientation: landscape) and (min-width: 750px){
     #myBlog{
@@ -212,16 +187,6 @@ main{
         width: 32%;
         max-width: 480px;
         margin-left: 15px;
-    }
-    .carousel{
-        width: 54%;
-        position: relative;
-        top: 28px;
-        padding: 10px 0;
-    }
-    .carousel-blog .blog-content{
-        width: 41%;
-        padding: 30px;
     }
 }
 /* ----------------------------------------------------------------------------------------------------------------- */
