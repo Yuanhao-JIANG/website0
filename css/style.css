@@ -12,14 +12,27 @@ body{
 header{
     height: 185px;
 }
-#myBlog{
-    height: 180px;
-    width: 300px;
+.narrow-header{
+    height: 145px;
+}
+#myBlog, #lego-sets-header{
     position: relative;
-    top: 40px;
     border: solid 3px;
 }
+#myBlog{
+    width: 300px;
+    height: 180px;
+    top: 40px;
+}
+#lego-sets-header{
+    width: 310px;
+    height: 135px;
+    top: 40px;
+}
 #myBlog h1{
+    line-height: 1.7em;
+}
+#lego-sets-header h1{
     line-height: 1.7em;
 }
 .welcome-message{
@@ -49,9 +62,15 @@ main{
     display: inline-block;
     width: 98%;
 }
+.narrow-left-section{
+    width: 95%;
+}
 .right-section{
     display: inline-block;
     width: 98%;
+}
+.narrow-right-section{
+    width: 95%;
 }
 .center-section{
     display: inline-block;
@@ -114,6 +133,9 @@ main{
     width: 100%;
     padding: 30px;
 }
+.block{
+    display: block;
+}
 .blog-date{
     margin-top: 10px;
 }
@@ -131,11 +153,21 @@ main{
 #page-source{
     font-size: 1.2em;
 }
+/* ------- Lego Sets ------- */
+#typewriter{
+    width: 100%;
+}
+#bird-of-paradise{
+    width: 100%;
+}
+#hedwig{
+    width: 100%;
+}
 /* ----------------------------------------------------------------------------------------------------------------- */
 /* -------------------------------------------------- responsive --------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------------------------- */
 @media only screen and (min-width: 990px){
-    #myBlog{
+    #myBlog, #lego-sets-header{
         width: 500px;
     }
     .welcome-message{
@@ -146,29 +178,7 @@ main{
     #myBlog h1{
         line-height: 1.8em;
     }
-    main{
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-    }
-    .left-section{
-        display: inline-block;
-        width: 66%;
-        max-width: 950px;
-        margin-right: 15px;
-    }
-    .right-section{
-        display: inline-block;
-        width: 32%;
-        max-width: 480px;
-        margin-left: 15px;
-    }
-}
-@media only screen and (orientation: landscape) and (min-width: 750px){
-    #myBlog{
-        width: 500px;
-    }
-    #myBlog h1{
+    #lego-sets-header h1{
         line-height: 1.8em;
     }
     main{
@@ -187,6 +197,46 @@ main{
         width: 32%;
         max-width: 480px;
         margin-left: 15px;
+    }
+    .narrow-left-section{
+        width: 60% !important;
+    }
+    .narrow-right-section{
+        width: 40% !important;
+    }
+}
+@media only screen and (orientation: landscape) and (min-width: 750px){
+    #myBlog, #lego-sets-header{
+        width: 500px;
+    }
+    #myBlog h1{
+        line-height: 1.8em;
+    }
+    #lego-sets-header h1{
+        line-height: 1.8em;
+    }
+    main{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .left-section{
+        display: inline-block;
+        width: 66%;
+        max-width: 950px;
+        margin-right: 15px;
+    }
+    .right-section{
+        display: inline-block;
+        width: 32%;
+        max-width: 480px;
+        margin-left: 15px;
+    }
+    .narrow-left-section{
+        width: 60% !important;
+    }
+    .narrow-right-section{
+        width: 40% !important;
     }
 }
 /* ----------------------------------------------------------------------------------------------------------------- */
